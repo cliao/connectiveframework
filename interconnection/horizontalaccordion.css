@@ -1,0 +1,103 @@
+.horizontalaccordion>ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+   	height: 500px;
+    margin-left: 230px;
+    margin-top: 100px;
+    min-width:780px;
+    float: left;
+    white-space: nowrap;
+
+}
+
+.horizontalaccordion>ul>li {
+    display:block;
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+	width:65px;
+	height: 550px;
+    white-space: normal;
+
+    /* Decorative CSS */
+
+    /* CSS3 Transitions */
+    transition: min-width 0.3s ease-in-out;
+    -moz-transition: min-width 0.3s ease-in-out;
+    -webkit-transition: min-width 0.3s ease-in-out;
+    -o-transition: min-width 0.3s ease-in-out;
+}
+
+.horizontalaccordion>ul>li>h3 {
+    display:block;
+    float:left;
+    margin: 0;
+    padding:10px;
+    height:39px;
+    min-width:500px;
+
+
+
+
+    /* Decorative CSS */
+    font-family: 'Droid Sans Mono', sans-serif;
+    text-decoration:none;
+    color: #fff;
+    background:#000;
+
+    /* CSS3 Transform Rotate & Translate */
+    white-space:nowrap;
+    -moz-transform: rotate(-90.0deg) translate(-390px,60px);  /* FF3.5+ */
+    -moz-transform-origin: 0 100%;
+    -o-transform: rotate(-90.0deg) translate(-390px,60px);  /* Opera 10.5 */
+    -o-transform-origin: 0 100%;
+    -webkit-transform: rotate(-90.0deg) translate(-390px,60px);  /* Saf3.1+, Chrome */
+    -webkit-transform-origin: 0 100%;
+    transform: rotate(-90.0deg) translate(-390px,60px);  /* Saf3.1+, Chrome */
+    transform-origin: 0 100%;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0)
+            progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff999999, endColorstr=#ffcccccc);  /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0)"
+                "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff999999, endColorstr=#ffcccccc)"; /* IE8 */
+
+}
+
+.horizontalaccordion>ul>li>div {
+    display:none;
+    float:left;
+    position:relative;
+    top:-150px;
+    left:80px;
+    *top:0px;       /* IE7 Hack */
+    *left:0px;      /* IE7 Hack */
+    margin:0;
+    min-width:300px;
+    height:480px;
+    padding:10px;
+
+}
+
+.horizontalaccordion>ul>li:hover {
+    min-width: 1100px; /*how much it slides over*/
+}
+
+
+.horizontalaccordion:hover>ul>li:hover>div {
+    display:inline;
+    min-width: 800px;
+}
+
+.horizontalaccordion:hover>ul>li:hover>h3 {
+    /* Decorative CSS */
+    color:#ffffff;
+    background:#000000;
+
+  
+}
+
+.horizontalaccordion>ul>li>h3:hover {
+    cursor:pointer;
+}
+

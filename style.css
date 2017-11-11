@@ -1,0 +1,187 @@
+
+
+/*
+	RESET & BASIC SETUP
+*/
+
+* {
+	margin: 0; 
+	padding: 0; 
+}
+
+body { 
+	font-family: 'Droid Sans Mono', sans-serif;
+ 	background-attachment: fixed;
+}
+
+
+
+/*
+	TYPOGRAPHY
+*/
+p { font-size: 10px; letter-spacing: 1px;line-height: 12px; font-family: 'Droid Sans', sans-serif; }
+h1 { font-family: 'Droid Sans', sans-serif; font-size: 18px; line-height: 22px; font-weight: 700;
+							 color: #000; letter-spacing: 1px;}
+h2 { font-family: 'Droid Sans', sans-serif; font-size: 10px; font-weight: 400; line-height: 12px;
+							 color: #000; letter-spacing: 1px;}
+h3 { font-family: 'Droid Sans Mono', sans-serif; font-size: 12px;
+							 color: #ffffff; letter-spacing: 1px;}
+h4 { font-family: 'Droid Sans', sans-serif; font-size: 5em; font-weight: 400;
+							 color: #000;letter-spacing: 1px; }
+h5 { font-family: 'Droid Sans', sans-serif; font-size: 16px; font-weight: 700;
+        color: #000;letter-spacing: 1px; }
+a { font-size:10px;  letter-spacing: 1px; color: #000000; line-height:12px; font-weight: 700; text-decoration: none; font-family: 'Droid Sans', sans-serif;}
+a:hover {text-decoration: underline;}
+li {line-height: 12px;}
+
+/*
+	STRUCTURE
+*/
+
+
+#contact {
+	width: 900px; 
+
+}
+
+
+/*
+	NAVIGATION
+*/
+.nav{
+position: fixed;
+margin-top: 0px;
+width: 15.5%;
+z-index: 1000;
+}
+
+#section1 {
+left: 3.5%;
+}
+
+#section2 {
+left: 19%;
+}
+
+#section3 {
+left: 34.5%;
+}
+
+#section4 {
+left: 50%;
+
+}
+
+#section5 {
+left: 65.5%;
+}
+
+#section6 {
+left: 81%;
+}
+
+.animation{
+	position: fixed;
+	margin-top: 50px;
+	right: 15%}
+
+.content{
+	position: fixed;
+	margin-top: 120px;
+	left: 34.5%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding: 10px;
+	width: 58%;
+	height:63%;
+}
+
+.information{
+position: fixed;
+left: 3.5%;
+top:45%;
+width: 23%;
+height:40%;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
+
+
+/*SCROLLBAR*/
+
+/* For the "inset" look only */
+html {
+    overflow: auto;
+}
+body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    padding: 30px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #000000; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #000000; 
+}
+
+/*
+	BORDER
+*/
+
+#top, #bottom, #left, #right {
+	background: #000000;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+
+
+@media (max-width: 480px){
+
+@media 
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+	#top, #bottom, #left, #right { display: none; }
+}
+}
